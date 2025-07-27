@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GhostNetCenterCR 👻🚀
 
-## Getting Started
+**GhostNetCenterCR** es un proyecto personal creado por [@Josexx96](https://github.com/Josexx96), con la visión de convertirse en un centro real de innovación en ciberseguridad, desarrollo de software, redes y soluciones inteligentes. Todo nace como una idea desde mi cuarto, con muchas ganas de aprender, construir con mis propias manos y llevarlo lo más lejos posible.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 Objetivo del Proyecto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Construir un ecosistema completo que combine:
+- 🔐 Seguridad informática (ofensiva y defensiva)
+- ☁️ Servicios en la nube autogestionados (como GhostCloud)
+- 💻 Desarrollo web moderno (Next.js, React, Node.js)
+- 🧱 Infraestructura física real (firewalls, switches, access points, servidores)
+- ⚙️ Automatización de procesos y control de redes reales
+- 💼 Aplicaciones útiles como facturación electrónica (NetfacturaCR)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚧 Estado actual
 
-## Learn More
+✅ Hasta ahora, se ha realizado:
 
-To learn more about Next.js, take a look at the following resources:
+- 🖥️ **Diseño y construcción de la web principal GhostNetCenterCR**
+  - Hecha con Next.js + Tailwind CSS
+  - Diseño profesional, responsivo y con efectos visuales avanzados
+  - Logo y estilo propio
+  - Proyecto inicializado en Git y publicado en GitHub
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛣️ Pasos a seguir
 
-## Deploy on Vercel
+🔄 Fase por fase:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🔹 Fase 1 – Finalizada
+- [x] Crear la marca **GhostNetCenterCR**
+- [x] Diseñar y codificar la web principal
+- [x] Publicar el repositorio en GitHub
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🔸 Fase 2 – En progreso
+- [ ] Conectar el proyecto con Vercel para verlo online
+- [ ] Configurar dominio propio
+
+### 🔹 Fase 3 – Desarrollo de proyectos internos
+- [ ] Desarrollar **NetfacturaCR** (Sistema de facturación electrónica para Costa Rica)
+- [ ] Comenzar **GhostCloud**, nube personal desde cero
+- [ ] Diseñar interfaz de cliente/usuario
+
+### 🔸 Fase 4 – Laboratorio físico
+- [ ] Montar gabinete ZKTeco 9U con firewall pfSense
+- [ ] Configurar VLANs y WiFi segmentado
+- [ ] Simular ataques y defensas en red real
+- [ ] Monitorear tráfico y automatizar respuestas
+
+---
+
+## 👨‍💻 Sobre mí
+
+Soy Jose Valderramos, estudiante de Ingeniería en Seguridad Informática, apasionado por construir cosas reales. Este proyecto es tanto mi campo de entrenamiento como mi carta de presentación.
+
+GitHub: [@Josexx96](https://github.com/Josexx96)
+
+---
+
+## 🧠 Nota
+
+Todo en este proyecto ha sido hecho 100% por mí, desde la idea hasta el código y la infraestructura.  
+Voy paso a paso, pero con ambición de que esto se convierta en algo mucho más grande 💪
+
+© 2025 GhostNetCenterCR. Todos los derechos reservados.
