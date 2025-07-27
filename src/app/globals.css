@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+/* Variables de color base */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Soporte para modo oscuro automático */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------- */
+/* 🔹 Chispitas visuales */
+/* ------------------- */
+@keyframes gnc-sparkle {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.animate-gnc-sparkle {
+  animation: gnc-sparkle 2s infinite ease-in-out;
+}
+
+/* ------------------- */
+/* 🔹 Burbujas flotantes */
+/* ------------------- */
+@keyframes gnc-bubble {
+  0% {
+    bottom: -10%;
+    opacity: 0.2;
+    transform: translateX(0) scale(0.8);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateX(-10px) scale(1);
+  }
+  100% {
+    bottom: 110%;
+    opacity: 0;
+    transform: translateX(10px) scale(1.2);
+  }
+}
+
+.animate-gnc-bubble {
+  bottom: 0;
+  animation: gnc-bubble linear infinite;
+}
+
+/* ------------------------------- */
+/* 🔹 Zoom respiratorio (zoom suave) */
+/* ------------------------------- */
+@keyframes gnc-zoomInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-gnc-zoomInOut {
+  animation: gnc-zoomInOut 2s ease-in-out infinite;
+}
+
+/* ------------------------------------------ */
+/* 🔹 Resplandor RGB tipo neón/fuego digital  */
+/* ------------------------------------------ */
+@keyframes gnc-rgbGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.6)) 
+            drop-shadow(0 0 10px rgba(255, 255, 255, 1)) 
+            drop-shadow(0 0 20px rgba(255, 150, 0, 0.4));
+  }
+  80% {
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8)) 
+            drop-shadow(0 0 20px rgba(255, 100, 0, 0.7)) 
+            drop-shadow(0 0 30px rgba(0, 251, 255, 0.6));
+  }
+}
+
+.animate-gnc-rgbGlow {
+  animation: gnc-rgbGlow 5.8s ease-in-out infinite;
+}
+
+/* ---------------------------------------------- */
+/* ♿ Accesibilidad: desactivar animaciones si el usuario lo prefiere */
+/* ---------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .animate-gnc-sparkle,
+  .animate-gnc-bubble,
+  .animate-gnc-pulseGlow,
+  .animate-gnc-rgbGlow,
+  .animate-gnc-zoomInOut {
+    animation: none !important;
+  }
+}
+
+/* --------------------------------------------------- */
+/* ANIMACIÓN fadeInSoft                                */
+/* Hace que un elemento aparezca suavemente con        */
+/* un desplazamiento desde abajo hacia su posición     */
+/* original y se desvanezca suavemente (fade in)       */
+/* --------------------------------------------------- */
+@keyframes fadeInSoft {
+  0% {
+    opacity: 0;                   /* Comienza totalmente invisible */
+    transform: translateY(20px);  /* Desplazado 20px hacia abajo */
+  }
+  100% {
+    opacity: 1;                   /* Termina completamente visible */
+    transform: translateY(0);     /* Regresa a su posición original */
+  }
+}
+
+.animate-fadeInSoft {
+  animation: fadeInSoft 5s ease-out both;
+  /* 5s = duración total de la animación */
+  /* ease-out = más suave al final */
+  /* both = mantiene los estilos del final después de la animación */
+}
+
+/* --------------------------------------------------- */
+/* ANIMACIÓN fadeDelay                                 */
+/* Solo cambia la opacidad de 0 a 1, sin movimiento    */
+/* Útil para transiciones simples de aparición         */
+/* --------------------------------------------------- */
+@keyframes fadeDelay {
+  0% {
+    opacity: 0;   /* Comienza invisible */
+  }
+  100% {
+    opacity: 1;   /* Termina visible */
+  }
+}
+
+
+/* --------------------------------------------------- */
+/* ANIMACIÓN COMBINADA: fade in suave + RGB resplandor */
+/* --------------------------------------------------- */
+@keyframes fadeInRGB {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  }
+  50% {
+    opacity: 0.7;
+    filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.4)) 
+            drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.8)) 
+            drop-shadow(0 0 20px rgba(255, 100, 0, 0.7)) 
+            drop-shadow(0 0 30px rgba(0, 251, 255, 0.6));
+  }
+}
+
+.animate-fadeInRGB {
+  animation: fadeInRGB 2.5s ease-out forwards;
+}
