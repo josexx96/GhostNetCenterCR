@@ -60,7 +60,7 @@ export default function Home() {
           alt="Logo GhostNetCenterCR"
           width={356}
           height={356}
-          className="object-contain drop-shadow-2xl opacity-80 animate-fadeInSoft"
+          className="object-contain drop-shadow-2xl opacity-80 animate-fadeInSoft w-[220px] sm:w-[280px] md:w-[356px]"
           style={{
             animationDelay: "0.3s",
             animationFillMode: "both",
@@ -76,7 +76,7 @@ export default function Home() {
           alt="GhostNetCenterCR"
           width={700}
           height={200}
-          className="object-contain animate-fadeInRGB"
+          className="object-contain animate-fadeInRGB w-[90vw] sm:w-[600px]"
           style={{
             animationDelay: "0.8s",
             animationFillMode: "both",
@@ -86,11 +86,12 @@ export default function Home() {
           }}
           priority
         />
+
       </div>
 
       {/* Texto descriptivo debajo del logo */}
       <p
-        className="relative z-10 mt-10 text-gray-300 text-center text-base sm:text-lg hover:text-[rgb(0,255,255)] hover:drop-shadow-[0_0_10px_rgb(0,255,255)] transition duration-300 animate-fadeInSoft"
+        className="relative z-10 mt-6 text-gray-300 text-center text-sm sm:text-base md:text-lg max-w-xs sm:max-w-md md:max-w-xl mx-auto hover:text-[rgb(0,255,255)] hover:drop-shadow-[0_0_10px_rgb(0,255,255)] transition duration-300 animate-fadeInSoft"
         style={{ animationDelay: "2.3s" }}
       >
         Centro de innovación en ciberseguridad, desarrollo y soluciones inteligentes en la nube.
@@ -105,10 +106,10 @@ export default function Home() {
           opacity: 0,
         }}
       >
-        <button className="px-6 py-3 rounded-xl border border-cyan-400 bg-white/10 backdrop-blur-md text-white font-semibold shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.6)] hover:border-cyan-300 hover:bg-white/20">
+        <button className="px-5 py-2 sm:px-6 sm:py-3 rounded-xl border border-cyan-400 bg-white/10 backdrop-blur-md text-white font-semibold shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,255,0.6)] hover:border-cyan-300 hover:bg-white/20 active:scale-95">
           Ver servicios
         </button>
-        <button className="px-6 py-3 rounded-xl border border-white/40 bg-white/10 backdrop-blur-md text-white font-semibold shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] hover:border-white/60 hover:bg-white/20">
+        <button className="px-5 py-2 sm:px-6 sm:py-3 rounded-xl border border-white/40 bg-white/10 backdrop-blur-md text-white font-semibold shadow-lg transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] hover:border-white/60 hover:bg-white/20 active:scale-95">
           Entrar
         </button>
       </div>
